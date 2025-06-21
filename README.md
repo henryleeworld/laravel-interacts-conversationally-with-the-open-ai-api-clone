@@ -1,4 +1,4 @@
-# Laravel 10 透過 OpenAI 聊天機器人克隆進行聊天對談
+# Laravel 11 透過 OpenAI 聊天機器人克隆進行聊天對談
 
 引入 openai-php 的 laravel 套件來擴增透過 OpenAI 聊天機器人克隆進行聊天對談，不僅可與使用者聊天對談，更可作為翻譯、算數、撰寫程式，甚至活動規劃等工作的輔助角色。
 
@@ -15,6 +15,10 @@ $ composer install
 - 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
+```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/` 來進行聊天對談。

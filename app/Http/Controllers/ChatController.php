@@ -18,8 +18,6 @@ class ChatController extends Controller
 {
     /**
      * Show the main chat screen
-     *
-     * @return ApplicationContract|Factory|View|Application
      */
     public function index(): Application|View|Factory|ApplicationContract
     {
@@ -32,9 +30,6 @@ class ChatController extends Controller
 
     /**
      * Sends a message to GPT API.
-     *
-     * @param Request $request
-     * @return ApplicationContract|Application|RedirectResponse|Redirector
      */
     public function store(Request $request): Application|Redirector|RedirectResponse|ApplicationContract
     {
@@ -55,9 +50,6 @@ class ChatController extends Controller
 
     /**
      * Reset the session and deletes the messages.
-     *
-     * @param Request $request
-     * @return ApplicationContract|Application|RedirectResponse|Redirector
      */
     public function destroy(Request $request): Application|Redirector|RedirectResponse|ApplicationContract
     {
